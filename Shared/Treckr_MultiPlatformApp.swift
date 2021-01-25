@@ -9,12 +9,17 @@ import SwiftUI
 
 @main
 struct Treckr_MultiPlatformApp: App {
+    
+    @StateObject var store = LocationStore()
+    
+    
+    
     var body: some Scene {
         WindowGroup {
             NavigationView{
                 
             
-            LocationDeatil(location: Location.example)
+            LocationsList(store: store)
             }
         }
     }
