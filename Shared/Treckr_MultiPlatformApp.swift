@@ -26,6 +26,23 @@ struct Treckr_MultiPlatformApp: App {
                     Image(systemName: "list.bullet")
                     Text("Locations")
                 }
+                
+                NavigationView{
+                    WorldMap()
+                }
+                .tabItem {
+                    Image(systemName: "map")
+                    Text("Map")
+                }
+                
+                NavigationView{
+                    TipsList()
+                }
+                .tabItem {
+                    Image(systemName: "person.fill.questionmark")
+                    Text("Tips")
+                }
+                
             }
         }
     }
