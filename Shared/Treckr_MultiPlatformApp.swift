@@ -16,10 +16,16 @@ struct Treckr_MultiPlatformApp: App {
     
     var body: some Scene {
         WindowGroup {
-            NavigationView{
-                
             
-            LocationsList(store: store)
+            TabView{
+                NavigationView{
+                    
+                LocationsList(store: store)
+                }
+                .tabItem {
+                    Image(systemName: "list.bullet")
+                    Text("Locations")
+                }
             }
         }
     }
