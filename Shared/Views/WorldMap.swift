@@ -26,7 +26,7 @@ struct WorldMap: View {
                 
                 
                 NavigationLink(destination: LocationDeatil(location: location)){
-                    Image(location.country)
+                    Image(location.heroPicture)
                         .resizable()
                         .cornerRadius(10)
                         .frame(width:80, height: 40)
