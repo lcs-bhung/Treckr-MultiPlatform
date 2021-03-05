@@ -26,7 +26,6 @@ struct LocationsList: View {
                         
                         VStack(alignment: .leading) {
                             Text(location.name)
-                            Text(location.country)
                                 .font(.subheadline)
                              
                         }

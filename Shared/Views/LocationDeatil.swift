@@ -27,7 +27,7 @@ struct LocationDeatil: View {
             
             HStack {
             
-            Text(location.country)
+            Text(location.name)
             font(.title)
             .foregroundColor(.secondary)
             .padding(.bottom)
@@ -39,40 +39,40 @@ struct LocationDeatil: View {
             Text(location.description)
                 .padding(.horizontal)
             
-            HStack{
-                
-                Text("Did you know?")
-                    .font(.title3)
-                    .bold()
-                    .padding(.vertical)
-                
-                Spacer()
-                
-            }
+//            HStack{
+//
+//                Text("Did you know?")
+//                    .font(.title3)
+//                    .bold()
+//                    .padding(.vertical)
+//
+//                Spacer()
+//
+//            }
             padding(.horizontal)
             
     
             
-            if !location.advisory.isEmpty{
-                HStack{
-                    Text("Advisory")
-                        .font(.title3)
-                        .bold()
-                        .padding(.vertical)
-                        
-                    Spacer()
-                }
-                .padding(.horizontal)
-                
-                Text(location.advisory)
-                    .padding([.horizontal, .bottom])
-                
-            } else {
-                
-                Text(location.more)
-                    .padding([.horizontal, .bottom])
-                
-            }
+//            if !location.advisory.isEmpty{
+//                HStack{
+//                    Text("Advisory")
+//                        .font(.title3)
+//                        .bold()
+//                        .padding(.vertical)
+//
+//                    Spacer()
+//                }
+//                .padding(.horizontal)
+//
+//                Text(location.advisory)
+//                    .padding([.horizontal, .bottom])
+//
+//            } else {
+//
+//                Text(location.more)
+//                    .padding([.horizontal, .bottom])
+//
+//            }
             
         }
         

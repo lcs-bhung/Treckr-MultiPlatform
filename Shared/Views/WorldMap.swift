@@ -14,8 +14,8 @@ struct WorldMap: View {
     @ObservedObject var store: LocationStore
     
     
-    //Center of LCS, wide enough to show NA
-    @State var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 44.43922, longitude: -78.26571), span: MKCoordinateSpan(latitudeDelta: 40, longitudeDelta: 40))
+    //Center of LCS
+    @State var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 44.43922, longitude: -78.26571), span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
     
     
     var body: some View {
