@@ -34,10 +34,7 @@ struct Treckr_MultiPlatformApp: App {
                     Image(systemName: "map")
                     Text("Map")
                 }
-                
-                NavigationView{
-                    TipsList()
-                }
+               
                 .tabItem {
                     Image(systemName: "person.fill.questionmark")
                     Text("Tips")
